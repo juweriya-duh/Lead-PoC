@@ -1,0 +1,13 @@
+Assumptions and Limitations
+
+Assumptions:
+I used the app in Dev mode at first, but had to switch it to Live mode. In Dev mode, real leads were not reaching my backend, even though everything was set up correctly.
+I used a WebSocket instead of push notifications, since the app screen needed to update on its own, without me touching the phone.
+I tested using Meta's Lead Ads testing tool instead of a real ad.
+The page and form I used were made only for this test and are not a real business.
+
+Limitations:
+Leads are only stored in memory. If I restart the backend, they are gone. A real app would use a proper database like postgreSQL /MongoDB /mySQL.
+There is no login or security on the backend. Anyone who can reach it could see the leads.
+All connected devices see all leads. There is no way to separate leads by user or form.
+Access tokens from Meta expire after about an hour, so I had to keep generating new ones while testing.
